@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoStar - Iniciar sesión y Registro</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="barra-superior">
+      <h1>AutoSTAR</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Autos Nuevos</a></li>
+          <li><a href="#">Autos Usados</a></li>
+          <li><a href="#">Sedes</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Vendedores</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="contenedor-principal">
+
+    <!-- Sección de login y registro -->
+    <section class="formulario-lateral">
+
+      <!-- Inicio de Sesión -->
+      <h2>Iniciar Sesión</h2>
+      <form>
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+
+      <!-- Registro -->
+      <h2>Registrarse</h2>
+      <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="documento">Documento</label>
+        <input type="text" id="documento" name="documento" required>
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="departamento">Departamento</label>
+        <input type="text" id="departamento" name="departamento" required>
+
+        <label>
+          <input type="checkbox" name="terminos" required>
+          Aceptar términos
+        </label>
+
+        <button type="submit">Registrar datos</button>
+      </form>
+
+    </section>
+
+    <!-- Catálogo de Vehículos -->
+    <section class="catalogo-autos">
+
+      <article class="auto">
+        <img src="auto1.jpg" alt="CLA Coupé">
+        <h3>CLA COUPÉ</h3>
+        <p>Desde $218.900.000</p>
+        <p>8.2s De 0 a 100 Kms<br>250 Nm Torque<br>163 Hp Potencia</p>
+        <button>Contactar</button>
+      </article>
+
+      <article class="auto">
+        <img src="auto2.jpg" alt="Clase C Sedán">
+        <h3>CLASE C SEDÁN</h3>
+        <p>Desde $249.900.000</p>
+        <p>8.0s De 0 a 100 Kms<br>275 Nm Torque<br>190 Hp Potencia</p>
+        <button>Contactar</button>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-contenido">
+      <div class="logo-footer">
+        <img src="mercedes-logo.png" alt="Mercedes-Benz">
+      </div>
+      <div class="contacto-footer">
+        <p>Barranquilla: (605) 385 52 054</p>
+        <p>Bogotá: (601) 314 68 096</p>
+        <p>Medellín: (604) 204 23 726</p>
+        <p>contacto@autostar.com</p>
+      </div>
+      <div class="redes-sociales">
+        <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Vehículo - AutoStar</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="barra-superior">
+      <h1>AutoSTAR</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Autos Nuevos</a></li>
+          <li><a href="#">Autos Usados</a></li>
+          <li><a href="#">Sedes</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Vendedores</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <h2>Registrar el vehículo</h2>
+
+    <form class="formulario-registro">
+      <div class="fila">
+        <label>Modelo:</label>
+        <input type="text" name="modelo" required>
+
+        <label>Placa:</label>
+        <input type="text" name="placa" required>
+      </div>
+
+      <div class="fila">
+        <label>Estado:</label>
+        <select name="estado" required>
+          <option value="">Seleccione</option>
+          <option value="Nuevo">Nuevo</option>
+          <option value="Usado">Usado</option>
+        </select>
+
+        <label>Color:</label>
+        <input type="text" name="color" required>
+      </div>
+
+      <div class="fila">
+        <label>Categoría:</label>
+        <select name="categoria" required>
+          <option value="">Seleccione</option>
+          <option value="Automóvil">Automóvil</option>
+          <option value="Camioneta">Camioneta</option>
+          <option value="Campero">Campero</option>
+          <option value="SUV">SUV</option>
+        </select>
+
+        <label>Precio:</label>
+        <input type="number" name="precio" required>
+      </div>
+
+      <label>Descripción:</label>
+      <textarea name="descripcion" rows="4"></textarea>
+
+      <button type="submit">Registrar</button>
+    </form>
+
+    <!-- Sección de vehículos del vendedor -->
+    <section class="tus-vehiculos">
+      <h2>Tus vehículos</h2>
+      <div class="galeria-vehiculos">
+
+        <!-- Vehículo 1 -->
+        <div class="vehiculo">
+          <img src="vehiculo1.jpg" alt="Mercedes-Benz GLA">
+          <p>Mercedes-Benz Clase GLA 1.6 Urban</p>
+          <button>Consultar</button>
+          <button>Modificar</button>
+        </div>
+
+        <!-- Vehículo 2 -->
+        <div class="vehiculo">
+          <img src="vehiculo2.jpg" alt="Mercedes-Benz GLA">
+          <p>Mercedes-Benz Clase GLA 1.6 Urban</p>
+          <button>Consultar</button>
+          <button>Modificar</button>
+        </div>
+
+        <!-- Vehículo 3 -->
+        <div class="vehiculo">
+          <img src="vehiculo3.jpg" alt="Mercedes-Benz GLA">
+          <p>Mercedes-Benz Clase GLA 1.6 Urban</p>
+          <button>Consultar</button>
+          <button>Modificar</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-contenido">
+      <div class="logo-footer">
+        <img src="mercedes-logo.png" alt="Mercedes-Benz">
+      </div>
+      <div class="botones-footer">
+        <button>Cotiza aquí</button>
+        <button>Agendar Cita</button>
+      </div>
+      <div class="redes-sociales">
+        <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
